@@ -11,7 +11,7 @@
         # Disable IPv6
         "network.dns.disableIPv6" = true;
 
-        # Limit cross-origin referres
+        # Limit cross-origin referrers
         "network.http.referer.XOriginPolicy" = 2;
 
         # Change "Logins and Passwords" settings
