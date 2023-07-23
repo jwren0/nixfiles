@@ -104,7 +104,7 @@ top_bar = bar.Bar([
         widget.Clock(format="%a %d %b %Y"),
         widget.Sep(padding=20, linewidth=2),
         widget.Clock(format="%H:%M"),
-    ]
+    ],
     24,
     margin=[10, 10, 0, 10],
     background="#000000.0"
