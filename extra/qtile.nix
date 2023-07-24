@@ -12,4 +12,9 @@
             configFile = ./qtile.py;
         };
     };
+
+    sound.mediaKeys = {
+        enable = true;
+        volumeStep = "5%";
+    };
 }
