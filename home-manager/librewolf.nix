@@ -1,6 +1,11 @@
 {
     enable = true;
     settings = {
+        # Force dark theme
+        "browser.theme.content-theme" = 0;
+        "browser.theme.toolbar-theme" = 0;
+        "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+
         # Disable smooth scrolling
         "general.smoothScroll" = false;
 
