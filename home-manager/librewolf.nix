@@ -30,6 +30,7 @@
         "permissions.default.geo" = 2;
         "permissions.default.microphone" = 2;
         "permissions.default.xr" = 2;
+        "privacy.donottrackheader.enabled" = true;
 
         # Disable bookmarks on new tabs/pages
         "browser.newtabpage.activity-stream.section.highlights.includeBookmarks" = false;
