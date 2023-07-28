@@ -78,6 +78,7 @@
         LESS_TERMCAP_ue = "$(printf \"\\e[0m\")";
         CARGO_HOME = "$HOME/.local/share/cargo";
         RUSTUP_HOME = "$HOME/.local/share/rustup";
+        DOCKER_HOST = "unix://$XDG_RUNTIME_DIR/docker.sock";
     };
 
     shellAliases = {
