@@ -5,7 +5,6 @@ let
         ./core/boot.nix
         ./core/documentation.nix
         ./core/fonts.nix
-        ./core/zsh.nix
     ];
     _basePackages = import ./core/packages.nix;
     _customPackages = if builtins.pathExists ./custom/packages.nix then import ./custom/packages.nix else { ... } : [];
