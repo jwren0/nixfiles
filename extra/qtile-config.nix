@@ -1,3 +1,4 @@
+pkgs: ''
 from libqtile import bar, \
                      layout, \
                      widget
@@ -111,7 +112,11 @@ top_bar = bar.Bar([
 )
 
 screens = [
-    Screen(top=top_bar),
+    Screen(
+        top=top_bar,
+        wallpaper="${pkgs.pantheon.elementary-wallpapers}/share/backgrounds/Morskie Oko.jpg",
+        wallpaper_mode="fill"
+    ),
 ]
 
 # Drag floating layouts.
@@ -131,3 +136,4 @@ focus_on_window_activation = "smart"
 reconfigure_screens = True
 auto_minimize = True
 wmname = "LG3D"
+''
