@@ -61,6 +61,8 @@
 
         unset _f
     }
+
+    unalias l
     '';
 
     sessionVariables = let
