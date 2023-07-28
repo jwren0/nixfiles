@@ -20,6 +20,8 @@
     #jdk17
     #jdk
     #ldns
+    libsForQt5.qt5.qtgraphicaleffects
+    libsForQt5.qt5.qtquickcontrols
     #ltrace
     #lua
     #lua-language-server
