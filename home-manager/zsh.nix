@@ -30,6 +30,13 @@
     bindkey "^[[1;5C" forward-word
     bindkey "^[[1;5D" backward-word
 
+    digest() {
+        md5sum $@ \
+            && sha1sum $@ \
+            && sha256sum $@ \
+            && sha512sum $@
+    }
+
     poweroff() {
         printf "Really poweroff? [y/N] "
         read opt
