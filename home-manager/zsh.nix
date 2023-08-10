@@ -81,6 +81,8 @@
         CARGO_HOME = "$HOME/.local/share/cargo";
         RUSTUP_HOME = "$HOME/.local/share/rustup";
         DOCKER_HOST = "unix://$XDG_RUNTIME_DIR/docker.sock";
+        DOCKER_BUILDKIT = "0";
+        DOCKER_CONTENT_TRUST = "1";
     };
 
     shellAliases = {
