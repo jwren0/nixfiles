@@ -22,7 +22,7 @@
     autoload -Uz add-zsh-hook vcs_info
     add-zsh-hook precmd vcs_info
 
-    PROMPT="%n%F{green}@%m%f\$vcs_info_msg_0 %1~%F{green}>%f "
+    PROMPT="%n%F{green}@%m%f\$vcs_info_msg_0_ %1~%F{green}>%f "
 
     bindkey "\e[3~" delete-char
     bindkey "^[[1;3C" forward-word
