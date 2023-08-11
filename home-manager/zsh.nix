@@ -108,6 +108,7 @@
         "pman" = "MANPAGER=zathura man -T pdf";
         "tree" = "tree -CF --dirsfirst";
         "update" = "sudo nix-channel --update && sudo nixos-rebuild switch";
+        "ncmpcpp" = "ncmpcpp -q";
         "shutdown" = "poweroff";
 
         # Directory aliases
