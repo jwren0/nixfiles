@@ -28,6 +28,7 @@
     lynx
     man-pages
     man-pages-posix
+    most
     neofetch
     neovim
     onefetch

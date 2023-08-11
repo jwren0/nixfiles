@@ -69,6 +69,18 @@
         unset _f
     }
 
+    objdump() {
+        if [ $# -lt 1 ]; then
+            ${pkgs.binutils}/bin/objdump --help
+        else
+            ${pkgs.binutils}/bin/objdump \
+                -D -M intel \
+                --visualize-jumps=color \
+                --disassembler-color=on \
+                $@ | ${pkgs.most}/bin/most
+        fi
+    }
+
     unalias l
     '';
 
