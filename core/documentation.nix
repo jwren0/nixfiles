@@ -1,4 +1,4 @@
-{ config, ... } : {
+{
     documentation = {
         enable = true;
         dev.enable = true;
