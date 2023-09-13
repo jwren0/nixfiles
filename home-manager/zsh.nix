@@ -91,6 +91,8 @@
         PAGER = less;
         EDITOR = nvim;
         VISUAL = nvim;
+        LYNX_CFG = "$HOME/.config/lynx/lynx.cfg";
+        LYNX_LSS = "$HOME/.config/lynx/lynx.lss";
         WORDCHARS = "$.";
         LESSHISTFILE = "/dev/null";
         LESS_TERMCAP_md = "$(printf \"\\e[1;34m\")";
