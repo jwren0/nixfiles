@@ -24,16 +24,17 @@ bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
 
 set-option -sa terminal-overrides ",xterm-256color:Tc"
 
-# One Dark
+# One Dark Darker
+# See: https://github.com/navarasu/onedark.nvim
 %hidden OD_BLACK="#282c34"
-%hidden OD_RED="#e06c75"
-%hidden OD_GREEN="#98c379"
-%hidden OD_YELLOW="#e5c07b"
-%hidden OD_BLUE="#61afef"
-%hidden OD_MAGENTA="#c678dd"
-%hidden OD_CYAN="#56b6c2"
-%hidden OD_WHITE="#aab2bf"
-%hidden OD_GREY="#3e4452"
+%hidden OD_RED="#e55561"
+%hidden OD_GREEN="#8ebd6b"
+%hidden OD_YELLOW="#e2b86b"
+%hidden OD_BLUE="#4fa6ed"
+%hidden OD_MAGENTA="#bf68d9"
+%hidden OD_CYAN="#48b0bd"
+%hidden OD_WHITE="#a0a8b7"
+%hidden OD_GREY="#535965"
 
 set-option -g status-bg "$OD_BLACK"
 set-option -g status-fg "$OD_WHITE"

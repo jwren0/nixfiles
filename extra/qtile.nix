@@ -1,4 +1,4 @@
-{ pkgs, ... } : {
+{
     services.picom = {
         enable = true;
     };
@@ -49,7 +49,7 @@
             backend = "x11";
             configFile = (import <nixpkgs> {}).writeTextFile {
                 name = "qtile.py";
-                text = import ./qtile-config.nix pkgs;
+                text = import ./qtile-config.nix;
             };
         };
     };

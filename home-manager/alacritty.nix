@@ -1,34 +1,35 @@
 {
     enable = true;
     settings = {
-        # Colors (Wombat)
+        # Colors (One Dark Darker)
+        # See: https://github.com/navarasu/onedark.nvim
         colors = {
-            # Default colors
             primary = {
-                background = "#1f1f1f";
-                foreground = "#e5e1d8";
+                background = "#1f2329";
+                foreground = "#a0a8b7";
             };
 
             normal = {
-                black      = "#000000";
-                red        = "#f7786d";
-                green      = "#bde97c";
-                yellow     = "#efdfac";
-                blue       = "#6ebaf8";
-                magenta    = "#ef88ff";
-                cyan       = "#90fdf8";
-                white      = "#e5e1d8";
+                black      = "#0e1013";
+                red        = "#e55561";
+                green      = "#8ebd6b";
+                yellow     = "#e2b86b";
+                blue       = "#4fa6ed";
+                magenta    = "#bf68d9";
+                cyan       = "#48b0bd";
+                white      = "#a0a8b7";
             };
 
+
             bright = {
-                black      = "#b4b4b4";
-                red        = "#f99f92";
-                green      = "#e3f7a1";
-                yellow     = "#f2e9bf";
-                blue       = "#b3d2ff";
-                magenta    = "#e5bdff";
-                cyan       = "#c2fefa";
-                white      = "#ffffff";
+                black      = "#5c6370";
+                red        = "#8b3434";
+                green      = "#8ebd6b";
+                yellow     = "#835d1a";
+                blue       = "#4fa6ed";
+                magenta    = "#7e3992";
+                cyan       = "#266269";
+                white      = "#a0a8b7";
             };
         };
 
@@ -48,6 +49,10 @@
                 shape = "Beam";
                 blinking = "on";
             };
+        };
+
+        window = {
+            opacity = 0.9;
         };
     };
 }

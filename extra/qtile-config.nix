@@ -1,4 +1,30 @@
-pkgs: ''
+let
+    nixpkgs = import <nixpkgs> {};
+
+    inherit (nixpkgs) stdenv;
+
+    name = "onedark-wallpapers";
+    path = stdenv.mkDerivation {
+        inherit name;
+
+        src = builtins.fetchGit {
+            url = "https://github.com/Narmis-E/${name}";
+            ref = "main";
+            rev = "e4f15b90ebf7d3c7cf4fb5a08a4449d2321fb732";
+        };
+
+        installPhase = ''
+        mkdir -p $out/${name}
+
+        cp -r \
+            ./minimal/ \
+            $out/${name}
+        '';
+    };
+
+    wallpaperPath = (toString path)
+        + "/${name}/minimal/od_underwater.png";
+in ''
 from libqtile import bar, \
                      layout, \
                      widget
@@ -70,8 +96,8 @@ layouts = [
     layout.Columns(
         margin=10,
         border_width=2,
-        border_focus="#404040",
-        border_normal="#101010",
+        border_focus="#181a1f",
+        border_normal="#282c34",
         border_on_single=True
     ),
 ]
@@ -93,9 +119,9 @@ top_bar = bar.Bar([
             hide_unused=True,
             urgent_text="#ffffff",
             highlight_method="block",
-            this_screen_border="#404040",
+            this_screen_border="#535965",
             block_highlight_text_color="#ffffff",
-            this_current_screen_border="#404040"
+            this_current_screen_border="#535965"
         ),
         widget.Prompt(),
         widget.Sep(padding=20, linewidth=2),
@@ -114,7 +140,7 @@ top_bar = bar.Bar([
 screens = [
     Screen(
         top=top_bar,
-        wallpaper="${pkgs.pantheon.elementary-wallpapers}/share/backgrounds/Morskie Oko.jpg",
+        wallpaper="${wallpaperPath}",
         wallpaper_mode="fill"
     ),
 ]
