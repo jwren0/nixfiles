@@ -105,7 +105,7 @@
     };
 
     shellAliases = {
-        "ls" = "exa -Fg --icons --group-directories-first";
+        "ls" = "exa -Fg --icons --group-directories-first --git";
         "la" = "ls -la";
         "ll" = "ls -l";
         "al" = "la";
@@ -119,7 +119,9 @@
         "open" = "mimeopen";
         "pman" = "MANPAGER=zathura man -T pdf";
         "tree" = "tree -CF --dirsfirst";
+        "python" = "bpython";
         "update" = "sudo nix-channel --update && sudo nixos-rebuild switch";
+        "docker" = "docker --config=\"$HOME/.local/state/docker\"";
         "ncmpcpp" = "ncmpcpp -q";
         "shutdown" = "poweroff";
 
