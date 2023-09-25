@@ -10,24 +10,11 @@ user: {
         require-secmem = true;
         min-rsa-length = "4096";
 
-        personal-cipher-preferences = [
-            "AES256"
-            "AES192"
-            "AES128"
-            "TWOFISH"
-        ];
-        personal-digest-preferences = [
-            "SHA512"
-            "SHA384"
-            "SHA256"
-            "SHA224"
-            "RIPEMD160"
-        ];
-        personal-compress-preferences = [
-            "BZIP2"
-            "ZIP"
-            "Uncompressed"
-        ];
+        default-preference-list = "SHA512 SHA384 SHA256 AES256 AES192 AES128 BZIP2 ZIP Uncompressed";
+
+        personal-cipher-preferences = "AES256 AES192 AES128 TWOFISH";
+        personal-digest-preferences = "SHA512 SHA384 SHA256 SHA224 RIPEMD160";
+        personal-compress-preferences = "BZIP2 ZIP Uncompressed";
 
         s2k-cipher-algo = "AES256";
         s2k-digest-algo = "SHA512";
