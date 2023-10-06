@@ -6,7 +6,7 @@
     mouse = true;
     newSession = true;
     prefix = "C-Space";
-    terminal = "screen-256color";
+    terminal = "xterm-256color";
     extraConfig = ''
 bind-key -n S-Left select-pane -L
 bind-key -n S-Down select-pane -D
@@ -22,7 +22,7 @@ bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
 
-set-option -sa terminal-overrides ",screen-256color:Tc"
+set-option -sa terminal-overrides ",xterm-256color:Tc"
 
 # One Dark Darker
 # See: https://github.com/navarasu/onedark.nvim
