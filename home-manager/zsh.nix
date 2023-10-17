@@ -82,6 +82,9 @@
     }
 
     unalias l
+
+    export PATH="$PATH:$CARGO_HOME/bin"
+    export PATH="$RUSTUP_HOME/toolchains/stable-x86_64-unknown-linux-gnu/bin:$PATH"
     '';
 
     sessionVariables = let
@@ -107,7 +110,7 @@
     };
 
     shellAliases = {
-        "ls" = "exa -Fg --icons --group-directories-first --git";
+        "ls" = "eza -Fg --icons --group-directories-first --git";
         "la" = "ls -la";
         "ll" = "ls -l";
         "al" = "la";

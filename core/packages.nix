@@ -9,7 +9,6 @@
     #docker
     #docker-buildx
     #doxygen
-    exa
     #firefox
     #gdb
     #ghc
