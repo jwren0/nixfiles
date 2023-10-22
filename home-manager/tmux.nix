@@ -54,8 +54,8 @@ set-option -g window-status-current-format \
 #[fg=$OD_BLUE,bg=$OD_BLACK]"
 
 set-option -g status-right \
-"#[fg=$OD_YELLOW,bg=$OD_BLACK,nounderscore,noitalics,bold]\
-#[fg=$OD_BLACK,bg=$OD_YELLOW,nobold] %H:%M \
+"#[fg=$OD_YELLOW,bg=$OD_BLACK,nounderscore,noitalics]\
+#[fg=$OD_BLACK,bg=$OD_YELLOW] %H:%M \
 #[fg=$OD_MAGENTA,bg=$OD_YELLOW]\
 #[fg=$OD_BLACK,bg=$OD_MAGENTA] %Y-%m-%d \
 #[fg=$OD_GREEN,bg=$OD_MAGENTA]\
