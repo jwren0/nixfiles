@@ -25,7 +25,7 @@
                 black      = "#5c6370";
                 red        = "#8b3434";
                 green      = "#8ebd6b";
-                yellow     = "#835d1a";
+                yellow     = "#e2b86b";
                 blue       = "#4fa6ed";
                 magenta    = "#7e3992";
                 cyan       = "#266269";
