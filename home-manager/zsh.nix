@@ -119,6 +119,7 @@
         "bat" = "bat --theme OneHalfDark";
         "cal" = "cal -m";
         "cd.." = "cd ..";
+        "dhex" = "dhex -f $HOME/.config/dhex/dhexrc";
         "diff" = "diff -u --color=auto";
         "less" = "less -RF";
         "open" = "mimeopen";
