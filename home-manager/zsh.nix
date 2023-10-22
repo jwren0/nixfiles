@@ -127,6 +127,7 @@
         "python" = "bpython";
         "update" = "sudo nix-channel --update && sudo nixos-rebuild switch";
         "docker" = "docker --config=\"$HOME/.local/state/docker\"";
+        "hexedit" = "hexedit --color";
         "ncmpcpp" = "ncmpcpp -q";
         "shutdown" = "poweroff";
 
