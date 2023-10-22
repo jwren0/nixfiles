@@ -1,29 +1,10 @@
 { pkgs, ... } : with pkgs; [
     alacritty
     bat
-    #brave
-    #chromium (or ungoogled-chromium)
-    #clang
-    #clang-tools
     curl
-    #docker
-    #docker-buildx
-    #doxygen
-    #firefox
-    #gdb
-    #ghc
-    #gradle
-    #haskell-language-server
-    #jdk8
-    #jdk11
-    #jdk17
-    #jdk
-    #ldns
+    ldns
     libsForQt5.qt5.qtgraphicaleffects
     libsForQt5.qt5.qtquickcontrols
-    #ltrace
-    #lua
-    #lua-language-server
     lynx
     man-pages
     man-pages-posix
@@ -31,15 +12,8 @@
     neovim
     onefetch
     python3
-    #python311Packages.python-lsp-server
-    #rustup
-    #sphinx
-    #strace
     trash-cli
     tree
-    #vim
-    #wget
-    #whois
     xorg.xrandr
     zsh
     zsh-autosuggestions
