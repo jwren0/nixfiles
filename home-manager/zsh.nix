@@ -62,11 +62,7 @@
     }
 
     rm() {
-        for _f in $@; do
-            ${pkgs.trash-cli}/bin/trash $_f
-        done
-
-        unset _f
+        ${pkgs.trash-cli}/bin/trash $@
     }
 
     objdump() {
